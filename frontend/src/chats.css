@@ -1,0 +1,72 @@
+.chat-btn {
+  position: fixed;
+  right: 14px;
+  bottom: 30px;
+  background-color: brown;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  display: flex;
+}
+
+.chat-btn .close {
+  display: none;
+}
+
+#check:checked~.chat-btn i {
+  display: block;
+}
+
+#check:checked~.chat-btn .comment {
+  display: none;
+}
+
+#check {
+  display: none !important;
+}
+#check:checked~ .chat-wrapper{
+  opacity: 1;
+}
+
+.chat-wrapper {
+  opacity: 0;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 300px;
+  z-index: 2;
+  background-color: blanchedalmond;
+  transition-duration: all 0.4s;
+  border-radius: 5px;
+}
+
+
+.chat-header {
+  padding: 13px;
+  color: blanchedalmond;
+  background-color: cornflowerblue;
+  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 5px;
+
+}
+
+.chat-form{
+  padding: 15px;
+}
+
+.chat-form input,.chat-form textarea,
+.chat-form button{
+  margin-bottom: 10px;
+}
+
+.chat-form textarea{
+  resize: none;
+}
+.chat-msg{
+  max-height: 300px;
+  overflow: auto;
+}
